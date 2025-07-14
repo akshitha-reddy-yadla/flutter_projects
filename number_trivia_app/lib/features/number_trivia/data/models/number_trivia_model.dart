@@ -1,10 +1,7 @@
-import 'package:equatable/equatable.dart';
+import 'package:number_trivia_app/features/number_trivia/domain/entities/number_trivia.dart';
 
-class NumberTriviaModel extends Equatable {
-  const NumberTriviaModel({required this.text, required this.number});
-
-  final String text;
-  final int number;
+class NumberTriviaModel extends NumberTrivia {
+  const NumberTriviaModel({required super.text, required super.number});
 
   factory NumberTriviaModel.fromJson(Map<String, dynamic> json) {
     return NumberTriviaModel(
